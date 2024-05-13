@@ -221,4 +221,4 @@ LINE_COMMENT_NLSEMI : '//' ~[\r\n]*       -> channel(HIDDEN);
 //return to normal lexing
 EOS: ([\r\n]+ | ';' | '/*' .*? '*/' | EOF) -> mode(DEFAULT_MODE);
 // Did not find an EOS, so go back to normal lexing
-OTHER: . -> mode(DEFAULT_MODE), channel(HIDDEN);
+OTHER: -> mode(DEFAULT_MODE), channel(HIDDEN);
