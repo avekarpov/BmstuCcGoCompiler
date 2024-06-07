@@ -1507,7 +1507,6 @@ public:
     virtual size_t getRuleIndex() const override;
     LiteralContext *literal();
     OperandNameContext *operandName();
-    TypeArgsContext *typeArgs();
     antlr4::tree::TerminalNode *L_PAREN();
     ExpressionContext *expression();
     antlr4::tree::TerminalNode *R_PAREN();

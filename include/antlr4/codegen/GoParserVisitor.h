@@ -226,6 +226,6 @@ public:
 
     virtual std::any visitEos(GoParser::EosContext *context) = 0;
 
-
+    virtual ~GoParserVisitor() = default;
 };
 
